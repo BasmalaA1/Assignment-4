@@ -1,0 +1,911 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: EXO, sans-serif;
+}
+.container{
+    width: 100%;
+    margin: auto;
+}
+ul{
+    list-style: none;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+.nav{
+    width: 95%;
+    margin: auto;
+}
+.d-flex{
+    display: flex;
+}
+.align-items-center{
+    align-items: center;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+.capitalize{
+    text-transform: capitalize;
+}
+.cursor{
+    cursor: pointer;
+}
+.d-c{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.meet{
+    font-size: 50px;
+    font-weight: bold;
+}
+.rebel{
+    position: relative;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(94, 94, 94);
+}
+.rebel::after{
+    content: "";
+    position: absolute;
+    top: 40px;
+    right: 35%;
+    width: 40%;
+    height: 8px;
+    background-color: black;
+}
+.nav-section{
+    padding: 0 10%;
+}
+.nav-section .navbar{
+    position: fixed;
+    z-index: 1000; 
+    padding: 15px 0;
+    margin: 20px auto;
+    width: 80%;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+.nav-section .navbar .nav .logo{
+    color: #111111;
+}
+.nav-section .navbar .nav .logo span{
+    color: rgb(255, 119, 0);
+}
+.nav-section .navbar .nav .nav-links{
+    width: 45%;
+}
+.nav-section .navbar .nav .nav-links span{
+    margin: 0 15px;
+    color: darkgray;
+}
+.nav-section .navbar .nav .nav-links .nav-item .nav-link{
+    font-size: 14px;
+    font-weight: bold;
+    transition: all 0.2s;
+}
+.nav-section .navbar .nav .nav-links .nav-item .nav-link:hover{
+    color: orange;
+}
+.nav-section .navbar .nav .subscribe{
+    background-color: #FFD15B;
+    border-radius: 30PX;
+    border: 2PX solid black;
+    padding: 12PX 18PX;
+    font-weight: bold;
+}
+.Trend{
+    gap: 50px;
+}
+.bg-featured{
+    border: 2px solid black;
+    border-bottom: 3px solid black;
+    background-color: rgb(253, 236, 142);
+    padding: 10% 10% 70px 10%;
+}
+.bg-featured .Trend .Trending .Trending-now{
+    background-color: black;
+    color: #ffffff;
+    width: fit-content;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow: 3px 3px black;
+    font-weight: bold;
+}
+.bg-featured .Trend .Trending .brutal{
+    font-size: 70px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+.bg-featured .Trend .Trending .brutal .c-thoughts{
+    color: rgb(236, 37, 2);
+}
+.bg-featured .Trend .Trending .brutal .c-bold{
+    color: rgb(0, 135, 246);
+}
+.bg-featured .Trend .Trending .brutal .c-thoughts , .c-bold , .bs-brutal{
+    text-shadow: 3px 3px  black
+}
+.bg-featured .Trend .Trending .unfiltered{
+    border: 2px solid black;
+    background-color: #ffffff;
+    padding: 16px;
+    margin-bottom: 30px;
+    box-shadow: 3px 3px black;
+    font-size: 30px;
+    font-weight: lighter;
+    line-height: 35px;
+}
+.bg-featured .Trend .Trending .start-reading{
+    background-color: black;
+    color: #ffffff;
+}
+.bg-featured .Trend .Trending .watch-intro{
+    background-color: #ffffff;
+}
+.bg-featured .Trend .Trending .start-reading , .watch-intro{
+    padding: 20px 32px;
+    margin-right: 10px;
+    border: 4px solid black;
+    box-shadow: 8px 8px black;
+    font-weight: bold;
+    font-size: 20px;
+}
+.bg-featured .Trend .Trending .start-reading img{
+    width: 20px;
+    margin: 0 10px;
+}
+.bg-featured .Trend .Trending .watch-intro img{
+    width: 15px;
+    margin: 0 8px;
+}
+.bg-featured .Trend .featured img{
+    position: relative;
+    width: 100%;
+    border: 4px solid black;
+    box-shadow: 8px 8px black;
+}
+.bg-featured .Trend .featured .img-featured{
+    position: absolute;
+    top: 30%;
+    right: 10%;
+    width: fit-content;
+    background-color: rgb(241, 66, 42);
+    color: #ffffff;
+    padding: 10px 20px;
+    border: 2px solid black;
+    box-shadow: 3px 3px black;
+}
+.d-articles{
+    padding: 70px 10%;
+    border: 2px solid black;
+    border-bottom: 3px solid black;
+    background-color: whitesmoke;
+    gap: 30px;
+}
+.d-articles .articles{
+    width: 70%;
+}
+.d-articles .categorie{
+    position: sticky;
+    top: 1000%;
+    width: 32%;
+}
+.d-articles .lf-gap{
+    gap: 25%;
+    margin-bottom: 50px;
+}
+.d-articles .latest-articles{
+    font-size: 48px;
+    font-weight: bold;
+}
+.d-articles .fresh-content{
+    background-color: black;
+    color: #ffffff;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow: 3px 3px black;
+    font-weight: bold;
+}
+.d-articles .articles .edite{
+    border: 2px solid black;
+    width: 85%;
+}
+.d-articles .articles .need-edge{
+    position: relative;
+    background-color: #ffffff;
+    border: 4px solid black;
+    padding: 30px;
+    box-shadow: 3px 3px black;
+    margin-bottom: 35px;
+}
+.d-articles .articles .need-edge .user-img1{
+    width: 35%;
+}
+.d-articles .user{
+    width: 85%;
+}
+.d-articles .articles .need-edge .new{
+    position: absolute;
+    top: 20px;
+    left: 19%;
+    width: fit-content;
+    background-color: rgb(255, 38, 0);
+    padding: 4px;
+    color: #ffffff;
+    border: 2px solid black;
+}
+.d-articles .articles .need-edge .tech-section{
+    width: 100%;
+}
+.d-articles .articles .need-edge .tech-section .tech{
+    width: fit-content;
+    background-color: rgb(255, 213, 0);
+    padding: 5px 8px;
+    margin-bottom: 10px;
+    color: #111111;
+    font-size: 13px;
+    font-weight: bold;
+    border: 2px solid black;
+    box-shadow: 3px 3px black;
+}
+.d-articles .articles .need-edge .tech-section .why-your-web{
+    font-size: 24px;
+    margin-bottom: 20px;
+    transition: all 0.3s;
+}
+.d-articles .articles .need-edge:hover .why-your-web{
+    color: red;
+}
+.d-articles .articles .need-edge .tech-section .explor{
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+.d-articles .articles .need-edge .tech-section .rate{
+    width: 100%;
+    gap: 20px;
+}
+.d-articles .articles .need-edge .tech-section .rate img{
+    width: 20px;
+    margin: 0 5px;
+}
+.d-articles .articles .need-edge .tech-section .rate .alex{
+    font-size: 15px;
+}
+.d-articles .articles .need-edge .tech-section .rate .red{
+    color: red;
+}
+.d-articles .articles .typography-screams{
+    position: relative;
+    background-color: #ffffff;
+    border: 4px solid black;
+    padding: 30px;
+    box-shadow: 3px 3px black;
+    margin-bottom: 35px;
+}
+.d-articles .articles .Ag{
+    width: 85%;
+}
+.d-articles .articles .typography-screams .user-img2{
+    width: 35%;
+}
+.d-articles .articles .typography-screams .new{
+    position: absolute;
+    top: 13px;
+    left: 20%;
+    width: fit-content;
+    background-color: rgb(69, 117, 250);
+    padding: 4px;
+    color: #ffffff;
+    border: 2px solid black;
+}
+.d-articles .articles .typography-screams .design-section{
+    width: 100%;
+}
+.d-articles .articles .typography-screams .design-section .design{
+    width: fit-content;
+    background-color: rgb(115, 253, 154);
+    padding: 5px 8px;
+    margin-bottom: 10px;
+    color: #111111;
+    font-size: 13px;
+    font-weight: bold;
+    border: 2px solid black;
+    box-shadow: 3px 3px black;
+}
+.d-articles .articles .typography-screams .design-section .typography{
+    font-size: 24px;
+    margin-bottom: 20px;
+    transition: all 0.3s;
+}
+.d-articles .articles .typography-screams:hover .typography{
+    color: rgb(69, 117, 250);
+}
+.d-articles .articles .typography-screams .design-section .how-to-choose{
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+.d-articles .articles .typography-screams .design-section .rate{
+    width: 100%;
+    gap: 20px;
+}
+.d-articles .articles .typography-screams .design-section .rate img{
+    width: 20px;
+    margin: 0 5px;
+}
+.d-articles .articles .typography-screams .design-section .rate .alex{
+    font-size: 15px;
+}
+.d-articles .articles .typography-screams .design-section .rate .red{
+    color: red;
+}
+.d-articles .articles .Instagram{
+    position: relative;
+    background-color: #ffffff;
+    border: 4px solid black;
+    padding: 20px;
+    box-shadow: 3px 3px black;
+    margin-bottom: 50px;
+}
+.d-articles .articles .instagram{
+    width: 85%;
+}
+.d-articles .articles .Instagram .user-img3{
+    width: 35%;
+}
+.d-articles .articles .Instagram .new{
+    position: absolute;
+    top: 10px;
+    left: 17%;
+    width: fit-content;
+    background-color: rgb(157, 68, 246);
+    padding: 4px;
+    color: #ffffff;
+    border: 2px solid black;
+}
+.d-articles .articles .Instagram .culture-section{
+    width: 100%;
+}
+.d-articles .articles .Instagram .culture-section .culture{
+    width: fit-content;
+    background-color: rgb(252, 158, 222);
+    padding: 5px 8px;
+    margin-bottom: 10px;
+    color: #111111;
+    font-size: 13px;
+    font-weight: bold;
+    border: 2px solid black;
+    box-shadow: 3px 3px black;
+}
+.d-articles .articles .Instagram .culture-section .anti-instagram{
+    font-size: 24px;
+    margin-bottom: 20px;
+    transition: all 0.3s;
+}
+.d-articles .articles .Instagram:hover .anti-instagram{
+    color: rgb(157, 68, 246);
+}
+.d-articles .articles .Instagram .culture-section .Young{
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+.d-articles .articles .Instagram .culture-section .rate{
+    width: 100%;
+    gap: 20px;
+}
+.d-articles .articles .Instagram .culture-section .rate img{
+    width: 20px;
+    margin: 0 5px;
+}
+.d-articles .articles .Instagram .culture-section .rate .alex{
+    font-size: 15px;
+}
+.d-articles .articles .Instagram .culture-section .rate .red{
+    color: red;
+}
+.d-articles .articles .m-auto{
+    margin-inline: 30%;
+}
+.d-articles .articles button{
+    background-color: #111111;
+    color: #ffffff;
+    padding: 20px 32px;
+    border: 4px solid black;
+    box-shadow: 8px 8px black;
+    font-weight: bold;
+    font-size: 20px;
+}
+.d-articles .categorie .card-1{
+    width: 100%;
+    background-color: #ffffff;
+    border: 4px solid black;
+    padding: 21px;
+    box-shadow: 5px 5px black;
+    margin-bottom: 35px;
+}
+.d-articles .categorie .card-1 .t-now{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.d-articles .categorie .card-1 .death{
+    margin-bottom: 20px;
+}
+.d-articles .categorie .card-1 .death .one{
+    color: red;
+    font-size: 35px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.d-articles .categorie .card-1 .death .read-trend .death-mini{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.d-articles .categorie .card-1 .chaos{
+    margin-bottom: 20px;
+}
+.d-articles .categorie .card-1 .chaos .two{
+    color: rgb(69, 117, 250);
+    font-size: 35px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.d-articles .categorie .card-1 .chaos .read-trend .Chaos-Design{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.d-articles .categorie .card-1 .digital{
+    margin-bottom: 20px;
+}
+.d-articles .categorie .card-1 .digital .three{
+    color: rgb(157, 68, 246);
+    font-size: 35px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.d-articles .categorie .card-1 .digital .read-trend .digital-rebellion{
+    font-size: 20px;
+    font-weight: bold;
+}
+.d-articles .categorie .card-2{
+    width: 100%;
+    background-color: #ffffff;
+    border: 4px solid black;
+    padding: 25px;
+    box-shadow: 5px 5px black;
+}
+.d-articles .categorie .card-2 .categories{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.d-articles .categorie .card-2 .same{
+    border: 2px solid black;
+    padding: 15px 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.d-articles .categorie .card-2 .bg-y{
+    background-color: #fffabf;
+    transition: all 0.3s;
+}
+.d-articles .categorie .card-2 .bg-y:hover{
+    background-color: #fde800;
+    box-shadow: 5px 5px black;
+}
+.d-articles .categorie .card-2 .bg-g{
+    background-color: #e3ffef;
+    transition: all 0.3s;
+}
+.d-articles .categorie .card-2 .bg-g:hover{
+    background-color: rgb(120, 245, 155);
+    box-shadow: 5px 5px black;
+}
+.d-articles .categorie .card-2 .bg-p{
+    background-color: rgb(255, 237, 248);
+    transition: all 0.3s;
+}
+.d-articles .categorie .card-2 .bg-p:hover{
+    background-color: rgb(252, 158, 222);
+    box-shadow: 5px 5px black;
+}
+.d-articles .categorie .card-2 .bg-b{
+    background-color: rgb(224, 233, 255);
+    transition: all 0.3s;
+}
+.d-articles .categorie .card-2 .bg-b:hover{
+    background-color: rgb(178, 200, 255);
+    box-shadow: 5px 5px black;
+}
+.d-articles .categorie .card-2 .bg-v{
+    background-color: rgb(238, 221, 255);
+    transition: all 0.3s;
+}
+.d-articles .categorie .card-2 .bg-v:hover{
+    background-color: rgb(212, 177, 247);
+    box-shadow: 5px 5px black;
+}
+.authors{
+    width: 100%;
+    background-color: #fbd828;
+    border: 2px solid black;
+    border-bottom: 3px solid black;
+    padding: 70px 10%;
+}
+.authors .c-3{
+    margin-top: 90px;
+    gap: 30px;
+}
+.authors .c-3 .alx{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fffac5;
+    border: 4px solid black;
+    padding: 30px 10px;
+    box-shadow: 5px 5px black;
+}
+.authors .c-3 .alx:hover .name{
+    color: #FF2600;
+}
+.authors .c-3 .alx .ava2 , .arnold .ava3 , .mike .ava8{
+    width: 35%;
+    border: 4px solid black;
+}
+.authors .c-3 .alx .founder{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #FF2600;
+    color: #ffffff;
+    border: 2px solid black;
+    padding: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+.authors .c-3 .alx .name{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    transition: all 0.2s;
+}
+.authors .c-3 .alx .critic{
+    color: rgb(94, 94, 94);
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.authors .c-3 .alx .destroy{
+    width: 75%;
+    text-align: center;
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 20px;
+}
+.authors .c-3 .alx .conect{
+    margin: 0 20px;
+}
+.authors .c-3 .alx .conect img{
+    width: 25%;
+    margin-right: 10px;
+}
+.authors .c-3 .arnold{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(207, 245, 243, 0.927);
+    border: 4px solid black;
+    padding: 30px 10px;
+    box-shadow: 5px 5px black;
+}
+.authors .c-3 .arnold:hover .name{
+    color: #4575FA;
+}
+.authors .c-3 .arnold .lead{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #4575FA;
+    color: #ffffff;
+    border: 2px solid black;
+    padding: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+.authors .c-3 .arnold .name{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    transition: all 0.2s;
+}
+.authors .c-3 .arnold .critic{
+    color: rgb(94, 94, 94);
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.authors .c-3 .arnold .destroy{
+    width: 75%;
+    text-align: center;
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 20px;
+}
+.authors .c-3 .arnold .conect{
+    margin: 0 20px;
+}
+.authors .c-3 .arnold .conect img{
+    width: 25%;
+    margin-right: 10px;
+}
+.authors .c-3 .mike{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fee5f0;
+    border: 4px solid black;
+    padding: 30px 10px;
+    box-shadow: 5px 5px black;
+}
+.authors .c-3 .mike:hover .name{
+    color: #9D44F6;
+}
+.authors .c-3 .mike .viral{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #9D44F6;
+    color: #ffffff;
+    border: 2px solid black;
+    padding: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+.authors .c-3 .mike .name{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    transition: all 0.2s;
+}
+.authors .c-3 .mike .critic{
+    color: rgb(94, 94, 94);
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.authors .c-3 .mike .destroy{
+    width: 75%;
+    text-align: center;
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 20px;
+}
+.authors .c-3 .mike .conect{
+    margin: 0 20px;
+}
+.authors .c-3 .mike .conect img{
+    width: 25%;
+    margin-right: 10px;
+}
+.join{
+    width: 100%;
+    border: 2px solid black;
+    border-bottom: 3px solid black;
+    padding: 70px 10%;
+}
+.join .become-part{
+    margin-top: 10%;
+}
+.join .become-part .become{
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.join .become-part .pepole-join{
+    width: 80%;
+    border: 2px solid black;
+    box-shadow: 3px 3px black;
+    padding: 20px;
+    margin-bottom: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 28px;
+}
+.join .become-part .true , .ropot , .star , .pen{
+    margin-bottom: 20px;
+    gap: 20px;
+}
+.join .become-part .true img , .ropot img , .star img , .pen img{
+    width: 50px;
+    border: 2px solid black;
+}
+.join .become-part .true p , .ropot p , .star p , .pen p{
+    font-size: 18px;
+    font-weight: bold;
+}
+.join .become-part .join-free{
+    background-color: #111111;
+    color: #ffffff;
+    padding: 24px 60px;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 5px 5px black;
+    border: 0;
+}
+.join .what-rebel{
+    border: 4px solid black;
+    padding: 20px;
+}
+.join .what-rebel .what{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.join .what-rebel .final , .UX , .most{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 28px;
+    margin-bottom: 20px;
+}
+.join .what-rebel .finally , .the-ux , .the-most{
+    border: 2px solid black;
+    padding: 20px 25px;
+    margin-bottom: 20px;
+}
+.join .what-rebel .mark, .ava4, .james{
+    gap: 20px;
+}
+.join .what-rebel .mark img , .ava4 img , .james img{
+    width: 50px;
+    border: 2px solid black;
+}
+.join .what-rebel .about p{
+    margin-top: 5px;
+    color: rgb(165, 165, 165);
+    font-size: 14px;
+}
+.join .what-rebel .finally{
+    background-color: rgb(251, 241, 241);
+}
+.join .what-rebel .the-ux{
+    background-color: rgb(243, 243, 254);
+}
+.join .what-rebel .the-most{
+    background-color: rgb(246, 239, 254);
+}
+/* start Copyright Section */
+.copyright{
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+.sec8{
+    display: flex;
+    padding: 3% 10%;
+}
+.sec8 .future{
+    width: 100%;
+    margin-right: 50px;
+}
+.sec8 .ink{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.sec8 .ink img{
+    width: 60px;
+    margin: 14px 0;
+}
+.fc .trans{
+    font-size: 18px;
+    line-height: 27px;
+    width: 100%;
+    margin-top: 20px;
+}
+.categories{
+    width: 100%;
+}
+.categories .m-b{
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.geme p{
+    margin-bottom: 7px;
+    font-size: 15px;
+    margin-bottom: 13px;
+}
+.geme p a{
+    text-decoration: none;
+    color: ghostwhite;
+    font-size: 17px;
+    transition: 0.2s;
+}
+.geme p a:hover{
+   color: rgb(255, 204, 0);
+}
+.newsletter{
+    width: 95%;
+}
+.newsletter h2{
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.newsletter p{
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 30px;
+}
+.newsletter .email{
+    background-color: black;
+    border: 2px solid white;
+    padding: 20px 50% 20px 20px;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.newsletter .sub{
+    background-color: rgb(255, 204, 0);
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 20px 40%;
+    border: 0;
+    box-shadow: 4px 4px rgb(168, 135, 1);
+}
+.newsletter .sub:hover{
+    background-color: #ffb700;
+}
+.sec9{
+    width: 100%;
+    padding-bottom: 30px;
+    padding-inline: 10%;
+}
+.YourSiteName{
+    width: 100%;
+    border-top: 4px solid white;
+    display: flex;
+    justify-content: space-between;
+}
+.sec9 .YourSiteName a{
+    color: white;
+}
+.lof{
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.gem{
+    gap: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.gem p a:hover{
+    color: rgb(255, 204, 0);
+}
+/* end Copyright Section */
+/*--------------------------------------------------------------------------------------------------------------------------*/

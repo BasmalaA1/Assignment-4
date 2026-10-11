@@ -17,10 +17,6 @@ a{
     color: black;
     text-decoration: none;
 }
-.nav{
-    width: 95%;
-    margin: auto;
-}
 .d-flex{
     display: flex;
 }
@@ -64,6 +60,7 @@ a{
     height: 8px;
     background-color: black;
 }
+/* start navbar Section */
 .nav-section{
     padding: 0 10%;
 }
@@ -77,11 +74,16 @@ a{
     border: 2px solid black;
     border-radius: 20px;
 }
+.nav-section .navbar .nav{
+    width: 95%;
+    margin: auto;
+}
 .nav-section .navbar .nav .logo{
     color: #111111;
 }
 .nav-section .navbar .nav .logo span{
     color: rgb(255, 119, 0);
+    font-weight: bold;
 }
 .nav-section .navbar .nav .nav-links{
     width: 45%;
@@ -105,6 +107,16 @@ a{
     padding: 12PX 18PX;
     font-weight: bold;
 }
+.nav-section .navbar .nav .d-n{
+    display: none;
+}
+.nav-section .navbar .nav .list{
+    display: none;
+    cursor: pointer;
+}
+/* end navbar Section */
+/*--------------------------------------------------------------------------------------------------------------------------*/
+/* start featured Section */
 .Trend{
     gap: 50px;
 }
@@ -170,8 +182,10 @@ a{
     width: 15px;
     margin: 0 8px;
 }
-.bg-featured .Trend .featured img{
+.bg-featured .Trend .featured .rela{
     position: relative;
+}
+.bg-featured .Trend .featured img{
     width: 100%;
     border: 4px solid black;
     box-shadow: 8px 8px black;
@@ -187,6 +201,9 @@ a{
     border: 2px solid black;
     box-shadow: 3px 3px black;
 }
+/* end featured Section */
+/*--------------------------------------------------------------------------------------------------------------------------*/
+/* start articles Section */
 .d-articles{
     padding: 70px 10%;
     border: 2px solid black;
@@ -196,11 +213,6 @@ a{
 }
 .d-articles .articles{
     width: 70%;
-}
-.d-articles .categorie{
-    position: sticky;
-    top: 1000%;
-    width: 32%;
 }
 .d-articles .lf-gap{
     gap: 25%;
@@ -429,6 +441,13 @@ a{
     font-weight: bold;
     font-size: 20px;
 }
+.d-articles .categorie{
+    width: 32%;
+}
+.d-articles .categorie .sticky{
+    position: sticky;
+    top: 50px;
+}
 .d-articles .categorie .card-1{
     width: 100%;
     background-color: #ffffff;
@@ -541,6 +560,9 @@ a{
     background-color: rgb(212, 177, 247);
     box-shadow: 5px 5px black;
 }
+/* end articles Section */
+/*--------------------------------------------------------------------------------------------------------------------------*/
+/* start authors Section */
 .authors{
     width: 100%;
     background-color: #fbd828;
@@ -593,7 +615,7 @@ a{
     font-weight: bold;
     margin-bottom: 20px;
 }
-.authors .c-3 .alx .destroy{
+.authors .c-3 .alx .destroy , .arnold .destroy , .mike .destroy{
     width: 75%;
     text-align: center;
     font-size: 16px;
@@ -644,13 +666,6 @@ a{
     font-weight: bold;
     margin-bottom: 20px;
 }
-.authors .c-3 .arnold .destroy{
-    width: 75%;
-    text-align: center;
-    font-size: 16px;
-    line-height: 28px;
-    margin-bottom: 20px;
-}
 .authors .c-3 .arnold .conect{
     margin: 0 20px;
 }
@@ -695,13 +710,6 @@ a{
     font-weight: bold;
     margin-bottom: 20px;
 }
-.authors .c-3 .mike .destroy{
-    width: 75%;
-    text-align: center;
-    font-size: 16px;
-    line-height: 28px;
-    margin-bottom: 20px;
-}
 .authors .c-3 .mike .conect{
     margin: 0 20px;
 }
@@ -709,6 +717,9 @@ a{
     width: 25%;
     margin-right: 10px;
 }
+/* end authors Section */
+/*--------------------------------------------------------------------------------------------------------------------------*/
+/* start join Section */
 .join{
     width: 100%;
     border: 2px solid black;
@@ -749,6 +760,7 @@ a{
     background-color: #111111;
     color: #ffffff;
     padding: 24px 60px;
+    margin-top: 30px;
     font-size: 20px;
     font-weight: bold;
     box-shadow: 5px 5px black;
@@ -756,7 +768,9 @@ a{
 }
 .join .what-rebel{
     border: 4px solid black;
+    box-shadow: 6px 6px black;
     padding: 20px;
+    margin-top: 100px;
 }
 .join .what-rebel .what{
     font-size: 30px;
@@ -795,6 +809,8 @@ a{
 .join .what-rebel .the-most{
     background-color: rgb(246, 239, 254);
 }
+/* end join Section */
+/*--------------------------------------------------------------------------------------------------------------------------*/
 /* start Copyright Section */
 .copyright{
     width: 100%;
@@ -802,7 +818,6 @@ a{
     color: white;
 }
 .sec8{
-    display: flex;
     padding: 3% 10%;
 }
 .sec8 .future{
@@ -810,7 +825,6 @@ a{
     margin-right: 50px;
 }
 .sec8 .ink{
-    display: flex;
     align-items: center;
     gap: 10px;
     font-size: 20px;
@@ -887,8 +901,6 @@ a{
 .YourSiteName{
     width: 100%;
     border-top: 4px solid white;
-    display: flex;
-    justify-content: space-between;
 }
 .sec9 .YourSiteName a{
     color: white;
@@ -896,16 +908,240 @@ a{
 .lof{
     margin-top: 30px;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 18px;
 }
 .gem{
     gap: 20px;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 16px;
     margin-top: 20px;
 }
 .gem p a:hover{
     color: rgb(255, 204, 0);
 }
 /* end Copyright Section */
+/*--------------------------------------------------------------------------------------------------------------------------*/
+/* start media Section */
+@media (max-width: 1279.20px) {
+    /* start navbar Section */
+    .nav-section{
+    padding: 0 16px;
+    }
+    .nav-section .navbar{
+        width: 98%;
+        padding: 10px 24px;
+        border-radius: 15px
+    }
+    .nav-section .navbar .nav{
+    width: 100%;
+    margin: 0;
+    }
+    .nav-section .navbar .nav .nav-links{
+        display: none;
+    }
+    .nav-section .navbar .nav .subscribe{
+        display: none;
+    }
+    .nav-section .navbar .nav .list{
+        display: inline;
+        width: 42px;
+        border-radius: 4px;
+        border: 3px solid black;
+        box-shadow: 3px 3px black;
+    }
+    /* end navbar Section */
+    /*--------------------------------------------------------------------------------------------------------------------------*/
+    /* start featured Section */
+    .bg-featured{
+        padding: 10% 50px 70px 50px;
+    }
+    .bg-featured .Trend .Trending .unfiltered{
+        width: 92%;
+        font-size: 25px;
+        line-height: 32px;
+    }
+    .bg-featured .Trend .featured .img-featured{
+        top: 25%;
+        right: 4%;
+    }
+    /* end featured Section */
+    /*--------------------------------------------------------------------------------------------------------------------------*/
+    /* start articles Section */
+    .d-articles{
+        padding: 70px 20px;
+    }
+    .d-articles .articles{
+        width: 95%;
+    }
+    .d-articles .categorie{
+        width: 45%;
+    }
+    /* end articles Section */
+    /*--------------------------------------------------------------------------------------------------------------------------*/
+    /* start authors Section */
+    .authors{
+        padding: 70px 30px;
+    }
+    .authors .c-3{
+        flex-wrap: wrap;
+    }
+    .authors .c-3 .alx , .arnold , .mike{
+        width: 48%;
+    }
+    .authors .c-3 .alx .ava2 , .arnold .ava3 , .mike .ava8{
+        width: 25%;
+    }
+    .authors .c-3 .alx .destroy , .arnold .destroy , .mike .destroy{
+        width: 85%;
+    }
+    /* end authors Section */
+    /*--------------------------------------------------------------------------------------------------------------------------*/
+    /* start join Section */
+    .join{
+        padding: 70px 16px;
+    }
+    /* end join Section */
+    /*--------------------------------------------------------------------------------------------------------------------------*/
+    /* start Copyright Section */
+    .copyright{
+        padding: 50px 20px;
+    }
+    .sec8{
+        padding: 30px 0;
+        margin-bottom: 30px;
+    }
+    .sec8 .future{
+        margin: 0 50px 0 0;
+    }
+    .categories{
+        width: 60%;
+    }
+    .newsletter{
+        width: 100%;
+    }
+    .newsletter p{
+        font-size: 18px;
+    }
+    .newsletter .email{
+        padding: 20px 40% 20px 20px;
+    }
+    .newsletter .sub{
+        padding: 20px 38%;
+        font-size: 18px;
+    }
+    .sec9{
+        padding-inline: 10px;
+    }
+    .YourSiteName{
+        display: block;
+        text-align: center;
+    }
+    .gem{
+        margin-left: 31%;
+    }
+    /* end Copyright Section */
+    /*--------------------------------------------------------------------------------------------------------------------------*/
+}
+@media (max-width: 1023.20px) {
+    /* start navbar Section */
+    .nav-section .navbar{
+        width: 94%;
+    }
+    /* end navbar Section */
+    /*--------------------------------------------------------------------------------------------------------------------------*/
+    /* start featured Section */
+    .Trend{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .bg-featured .Trend .Trending .brutal{
+        width: 60%;
+    }
+    .bg-featured .Trend .Trending .unfiltered{
+        width: 100%;
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .bg-featured .Trend .featured img{
+        height: 400px;
+        width: 230%;
+    }
+    .bg-featured .Trend .featured .img-featured{
+        top: 115%;
+    }
+    /* end featured Section */
+    /*--------------------------------------------------------------------------------------------------------------------------*/
+    /* start articles Section */
+    .d-articles{
+        flex-direction: column;
+    }
+    .d-articles .lf-gap{
+        gap: 34%;
+    }
+    .d-articles .articles .need-edge , .typography-screams , .Instagram{
+        flex-direction: column;
+    }
+    .d-articles .articles .edite{
+    width: 60%;
+    margin-bottom: 10px;
+    }
+    .d-articles .articles .need-edge .tech-section .explor{
+        font-size: 18px;
+    }
+    .d-articles .categorie{
+        width: 100%;
+    }
+    /* end articles Section */
+    /*--------------------------------------------------------------------------------------------------------------------------*/
+    /* start authors Section */
+    .authors .c-3 .alx , .arnold , .mike{
+        width: 100%;
+    }
+    .authors .c-3 .alx .ava2 , .arnold .ava3 , .mike .ava8{
+        width: 15%;
+    }
+    .authors .c-3 .alx .destroy{
+        width: 86%;
+    }
+    .authors .c-3 .arnold .destroy{
+        width: 100%;
+    }
+    .authors .c-3 .mike .destroy{
+        width: 82%;
+    }
+    /* end authors Section */
+    /*--------------------------------------------------------------------------------------------------------------------------*/
+    /* start join Section */
+    .join{
+        padding-inline: 30px;
+    }
+    .c-2{
+        flex-direction: column;
+    }
+    .join .become-part .pepole-join{
+        width: 100%;
+    }
+    /* end join Section */
+    /*--------------------------------------------------------------------------------------------------------------------------*/
+    /* start Copyright Section */
+    .sec8{
+        flex-wrap: wrap;
+    }
+    .sec8 .future{
+        margin-bottom: 80px;
+    }
+    .categories{
+        width: 30%;
+    }
+    .newsletter{
+        width: 70%;
+    }
+    .newsletter .email{
+        padding-right: 60%;
+    }
+    .newsletter .sub{
+        padding-inline: 42%;
+    }
+}
+/* end media Section */
 /*--------------------------------------------------------------------------------------------------------------------------*/
